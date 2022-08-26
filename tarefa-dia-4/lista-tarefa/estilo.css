@@ -11,8 +11,19 @@ body{
 main{
     max-width: 300px;
     margin: 0 auto;
-    border: 10px solid blue;
+    
 }
+.entrada{
+    margin-top: 20px;
+    width: 300px;
+    
+    display: flex;
+    height: 30px;
+
+    align-content: center;
+   justify-content: space-between;
+}
+
 .logo{
     width: 200px;
     margin: 20px;
@@ -22,26 +33,34 @@ h1, p{
     text-align: center;
 }
 .botao{
-    background-color: #32cdac;
-    padding: 10px;
+    background-color: aqua;
+    padding: 0 5px;
     border: none;
     margin-left: 10px;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1em;
   cursor: pointer;
 }
-#btn_adicionar{
-    
+#caixa{
+    margin-top: 20px;
 }
 #lista{
-    display: flex;
-    flex-direction: column;
-}
-#lista li{
-   
-    align-items: space-between;
-    border: 1px solid lightgray;
     list-style: none;
-    width: 100%;
+}
+#lista .item{
+   
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+   
     background-color: #fff;
+}
+#lista li > span ~ button{
+    background-color: aqua;
+    border: 1px solid rgb(8, 0, 53);
+    width: 30px;
+}
+.concluida span {
+    text-decoration: line-through;
+    color: #a9a9a9;
 }
