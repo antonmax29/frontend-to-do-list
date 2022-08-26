@@ -60,7 +60,17 @@ h1, p{
     border: 1px solid rgb(8, 0, 53);
     width: 30px;
 }
+#lista li > span{
+    width: 100%;
+}
 .concluida span {
     text-decoration: line-through;
-    color: #a9a9a9;
+    color: #2c2b2b;
+    background-color: aquamarine;
+}
+.primeiro-list{
+    pointer-events: none;
+}
+.primeiro-list span{
+    text-align: center;
 }
