@@ -40,6 +40,7 @@ main{
 h1, p{
     color: #fff;
     text-align: center;
+    pointer-events: none;
 }
 .botao{
     background-color: aqua;
@@ -92,6 +93,7 @@ h1, p{
     color:white;
     padding: 9px 0;
    width: 100%;
+   cursor: pointer;
 }
 
 .concluida span {
@@ -139,6 +141,7 @@ h1, p{
     width: 30px;
 }
 #limpar{
+    cursor: pointer;
     font-weight: 900;
     margin: 20px auto;
     padding: 5px;
@@ -154,6 +157,7 @@ h1, p{
 .btn-excluir{
     text-align: center;
     padding: 10px;
+    cursor: pointer;
 }
 .btn-excluir:hover{
     transform: scale(0.2);
