@@ -1,4 +1,3 @@
-
 const inputTarefa = document.getElementById("tarefa-nova")
 inputTarefa.focus() 
 let idTarefa = 0
@@ -9,7 +8,6 @@ function addTarefa() {
 
     const item = document.createElement('li')
     idTarefa++
-    
     item.id = idTarefa
 
     const lista = document.querySelector('#lista')
@@ -41,10 +39,6 @@ function concluir(itemId) {
 
     const tarefaSelecionada = document.getElementById(itemId);
     tarefaSelecionada.className = "concluida";
-    
-  
-
-  
 }
 
 function excluir(itemExcluir) {
@@ -60,7 +54,12 @@ botao.addEventListener('click', addTarefa)
 btn_clear.addEventListener('click', limparLista)
 
 function limparLista() {
-  const lista = document.querySelector('#lista')
+
+  if(lista.innerHTML == '')
+  {
+    alert('lista vazia')
+  }else{const lista = document.querySelector('#lista')
   lista.innerHTML= ''
   inputTarefa.focus()
+}
 }
