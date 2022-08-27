@@ -64,17 +64,20 @@ h1, p{
     text-align: left;
     margin-bottom: 5px;
     display: flex;
-    
+    position: relative;
     align-items: center;
     border-top: 1px solid lightgray;
     border-radius: 5px;
     background-color: #191818;
     padding-left: 10px;
+    word-wrap: break-word;
 }
 
 #lista li > span ~ button{
     background-color: aqua;
     border: 0.5px solid rgb(0, 0, 0);
+    position: absolute;
+    right: 0;
     border-radius: 5px;
     outline: none;
     transition: 0.5s;
@@ -88,14 +91,11 @@ h1, p{
 #lista .item > span{
     color:white;
     padding: 9px 0;
-   min-width: 565px;
-  
-    word-wrap: break-word;
-    
+   width: 100%;
 }
 
 .concluida span {
-position: relative;
+
     
     width: 100%;
     /*color: #2c2b2b; */
@@ -104,15 +104,23 @@ position: relative;
 }
 
 .concluida span::after{
-    min-width: 565px;
+ width: 89%;
    position: absolute;
-   right: 5px;
+   right: 50px;
+   
    top: 5px;
    border-radius: 5px;
    padding: 5px;
    background-color: aquamarine;
-    content: '[Ok] - dblclick p/ desmarcar';
+    content: 'Tarefa Concluída - Dê duplo clique para desfazer a tarefa';
     color: #191d20;
+}
+@media (max-width: 600px){
+    .concluida span::after{
+        right: 30px;
+        width: 90%;
+        font-size: 0.8em;
+    }
 }
 
 .primeiro-list{
