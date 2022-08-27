@@ -47,6 +47,7 @@ h1, p{
     border-radius: 5px;
     font-size: 1em;
     cursor: pointer;
+    transition: 0.2s;
 }
 .botao:hover{
     transform: scale(1.1);
@@ -65,13 +66,15 @@ h1, p{
     align-items: center;
     border-top: 1px solid lightgray;
     border-radius: 5px;
-    background-color: #fff;
+    background-color: #191818;
 }
 
 #lista li > span ~ button{
     background-color: aqua;
     border: 0.5px solid rgb(0, 0, 0);
     border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
 }
 
 #lista li > span ~ button:hover{
@@ -80,7 +83,7 @@ h1, p{
 }
 
 #lista .item > span{
-    color:#191d20;
+    color:white;
     padding: 9px 0;
     width: 100%;
     
@@ -123,10 +126,10 @@ h1, p{
     border-radius: 5px;
     color: rgb(0, 0, 0);
     background-color: aqua;
-   transition: 1s;
+   transition: 0.3s;
 }
 #limpar:hover{
-    transform: scale(1.2);
+    transform: scale(1.02);
 }
 .btn-excluir{
     text-align: center;

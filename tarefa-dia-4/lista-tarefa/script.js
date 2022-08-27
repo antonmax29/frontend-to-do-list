@@ -14,7 +14,7 @@ function addTarefa() {
 
     item.innerHTML = `<li class="item">
     <span ondblclick="removeConcluir(${idTarefa})"  onclick="concluir(${idTarefa})">${inputTarefa.value}</span>
-    <button class="btn-excluir" onclick="excluir(${idTarefa})"><i class="fi fi-ss-trash"></i></i></button>
+    <button class="btn-excluir" onclick="excluir(${idTarefa})"><i class="fi fi-ss-trash"></i></button>
     </li>`
 
     if(inputTarefa.value == ''){
