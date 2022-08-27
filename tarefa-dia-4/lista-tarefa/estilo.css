@@ -17,6 +17,7 @@ padding: 50px;
   border-radius: 10px;
 }
 #tarefa-nova{
+    padding: 5px;
     width: 250px;
     border-radius: 10px;
     border: 1px solid  #191d20;
@@ -42,12 +43,15 @@ h1, p{
 }
 .botao{
     background-color: aqua;
-    padding: 0 5px;
+    padding: 5px;
     border: none;
    
     border-radius: 5px;
     font-size: 1em;
   cursor: pointer;
+}
+.botao:hover{
+    transform: scale(1.1);
 }
 #caixa{
     margin-top: 20px;
@@ -56,9 +60,11 @@ h1, p{
     list-style: none;
 }
 #lista .item{
+    padding: 10px;
     text-align: left;
    margin-bottom: 5px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     border-top: 1px solid lightgray;
    border-radius: 5px;
@@ -93,15 +99,22 @@ h1, p{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 10px;
 }
 .primeiro-list span{
-    text-align: center;
+    
+   
+
+    border-radius: 5px;
 }
 .primeiro-list .icon-lista{
     width: 30px;
 }
 #limpar{
-    
+    font-weight: 900;
     margin: 20px auto;
     padding: 5px;
     width: 200px;
@@ -109,4 +122,12 @@ h1, p{
     color: rgb(0, 0, 0);
     background-color: aqua;
    
+}
+.btn-excluir{
+    text-align: center;
+    padding: 10px;
+}
+.btn-excluir:hover{
+ 
+    transform: scale(1.2);
 }

@@ -16,7 +16,7 @@ function addTarefa() {
 
     item.innerHTML = `<li class="item">
     <span ondblclick="removeConcluir(${idTarefa})"  onclick="concluir(${idTarefa})">${inputTarefa.value}</span>
-    <button onclick="excluir(${idTarefa})"><i class="fi fi-ss-trash"></i></i></button>
+    <button class="btn-excluir" onclick="excluir(${idTarefa})"><i class="fi fi-ss-trash"></i></i></button>
     </li>`
 
     if(inputTarefa.value == ''){
@@ -62,4 +62,5 @@ btn_clear.addEventListener('click', limparLista)
 function limparLista() {
   const lista = document.querySelector('#lista')
   lista.innerHTML= ''
+  inputTarefa.focus()
 }
