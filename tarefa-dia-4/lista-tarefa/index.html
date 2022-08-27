@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css'>
     <title>Document</title>
 </head>
 <body>
@@ -19,19 +21,23 @@
         <h1>Lista de tarefas</h1>
         <p>Minha primeira lista de tarefas</p>
         <div class="entrada">
-            <input  type="text" id="tarefa-nova">
-            <button  class="botao" id="btn_adicionar">Adicionar</button>
+            <input placeholder="Digite uma nova tarefa" type="text" id="tarefa-nova">
+            <button  class="botao" id="btn_adicionar"><i class="fi fi-br-plus"></i></button>
         </div>
             <div id="caixa">
                 <ul id="lista">
                     <li class="primeiro-list item">
-                        <span>----Lista----</span>
-                        
+                        <span>Lista</span>
+                        <img class="icon-lista" src="./img/caderno.gif" alt="">
                     </li>
                     
                 </ul>
             </div>
+
+            <button id="limpar">Limpar</button>
     </main>
+
+    
 
     <script src="./script.js"></script>
 </body>

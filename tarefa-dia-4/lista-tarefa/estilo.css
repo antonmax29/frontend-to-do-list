@@ -11,7 +11,11 @@ body{
 main{
     max-width: 300px;
     margin: 0 auto;
-    
+  text-align: center;
+}
+#tarefa-nova{
+    width: 250px;
+    border-radius: 10px;
 }
 .entrada{
     margin-top: 20px;
@@ -48,17 +52,19 @@ h1, p{
     list-style: none;
 }
 #lista .item{
-   
+    text-align: left;
+   margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     border-top: 1px solid lightgray;
-   
+   border-radius: 5px;
     background-color: #fff;
 }
 #lista li > span ~ button{
     background-color: aqua;
-    border: 1px solid rgb(8, 0, 53);
+    border: 1px solid rgb(0, 0, 0);
     width: 30px;
+    border-radius: 5px;
 }
 #lista li > span ~ button:hover{
     transform: scale(1.1);
@@ -68,13 +74,35 @@ h1, p{
     width: 100%;
 }
 .concluida span {
-    text-decoration: line-through;
+   
     color: #2c2b2b;
     background-color: aquamarine;
+    border-radius: 5px;
+    
+}
+.concluida span::after{
+    content: '[Ok] - dblclick p/ desmarcar';
+    color: black;
 }
 .primeiro-list{
     pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .primeiro-list span{
     text-align: center;
+}
+.primeiro-list .icon-lista{
+    width: 30px;
+}
+#limpar{
+    
+    margin: 20px auto;
+    padding: 5px;
+    width: 200px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+   
 }
