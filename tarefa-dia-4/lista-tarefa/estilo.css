@@ -4,6 +4,7 @@
     padding:0;
 }
 body{
+    position: relative;
     font-family: 'Rubik', sans-serif;
     background-color: #23292e;
 }
@@ -63,10 +64,12 @@ h1, p{
     text-align: left;
     margin-bottom: 5px;
     display: flex;
+    
     align-items: center;
     border-top: 1px solid lightgray;
     border-radius: 5px;
     background-color: #191818;
+    padding-left: 10px;
 }
 
 #lista li > span ~ button{
@@ -85,20 +88,29 @@ h1, p{
 #lista .item > span{
     color:white;
     padding: 9px 0;
-    width: 100%;
+   min-width: 565px;
+  
+    word-wrap: break-word;
     
 }
 
 .concluida span {
-    padding: 9px 0;
+position: relative;
+    
     width: 100%;
-    background-color: aquamarine;
     /*color: #2c2b2b; */
     color: #191d20;
     border-radius: 5px;
 }
 
 .concluida span::after{
+    min-width: 565px;
+   position: absolute;
+   right: 5px;
+   top: 5px;
+   border-radius: 5px;
+   padding: 5px;
+   background-color: aquamarine;
     content: '[Ok] - dblclick p/ desmarcar';
     color: #191d20;
 }
