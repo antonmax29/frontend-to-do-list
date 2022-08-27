@@ -60,21 +60,23 @@ h1, p{
     list-style: none;
 }
 #lista .item{
-    padding: 2px;
+    
     text-align: left;
    margin-bottom: 5px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
     border-top: 1px solid lightgray;
    border-radius: 5px;
     background-color: #fff;
 }
 #lista li > span ~ button{
     background-color: aqua;
-    border: 1px solid rgb(0, 0, 0);
-    width: 30px;
+    border: 0.5px solid rgb(0, 0, 0);
+   
     border-radius: 5px;
+    
+
 }
 #lista li > span ~ button:hover{
     transform: scale(1.1);
@@ -83,10 +85,15 @@ h1, p{
 #lista li > span{
     width: 100%;
 }
+.concluida{
+  
+}
 .concluida span {
-   
-    color: #2c2b2b;
+    padding: 9px 0;
+    width: 100%;
     background-color: aquamarine;
+    color: #2c2b2b;
+   
     border-radius: 5px;
     
 }
