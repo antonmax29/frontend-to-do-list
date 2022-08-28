@@ -23,6 +23,7 @@ main{
     border-radius: 10px;
     border: 1px solid  #191d20;
     outline: none;
+    
 }
 .entrada{
     margin-top: 20px;
@@ -94,6 +95,7 @@ h1, p{
     padding: 9px 0;
    width: 100%;
    cursor: pointer;
+   text-transform: capitalize;
 }
 
 .concluida span {

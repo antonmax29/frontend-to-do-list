@@ -51,6 +51,13 @@ const botao = document.querySelector('#btn_adicionar')
 
 botao.addEventListener('click', addTarefa)
 
+inputTarefa.addEventListener('keypress', (e) => {
+  if (e.keyCode == 13) {
+    addTarefa()
+    
+  }
+})
+
 btn_clear.addEventListener('click', limparLista)
 
 function limparLista() {
